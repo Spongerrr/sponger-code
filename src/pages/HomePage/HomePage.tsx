@@ -1,7 +1,11 @@
+import { Hero } from "@/features"
+import { Skills } from "@/features"
+
 export const HomePage = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <Hero />
+      <Skills />
     </div>
   )
 }

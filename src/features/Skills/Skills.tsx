@@ -1,3 +1,4 @@
+import { Container } from '@/shared/ui/Container/Container'
 import IconJavaScript from '@/shared/assets/icons/javascript.svg?react'
 import IconTypeScript from '@/shared/assets/icons/typescript.svg?react'
 import IconReact from '@/shared/assets/icons/react.svg?react'
@@ -13,7 +14,7 @@ import s from './Skills.module.scss'
 
 export const Skills = () => {
   return (
-    <section>
+    <Container className={s.skillsSection}>
       <h2 className={s.title}>Навыки</h2>
       <div className={s.skills}>
         <div className={s.skill}>
@@ -59,6 +60,6 @@ export const Skills = () => {
           <p>Docker</p>
         </div>
       </div>
-    </section>
+    </Container>
   )
 }

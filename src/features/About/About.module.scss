@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.image {
+  border: 4px solid black;
+  border-radius: 16px;
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.title {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-zinc-500);
+}

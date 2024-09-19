@@ -1,8 +1,10 @@
+import { Container } from '@/shared/ui/Container/Container'
+
 import s from './Header.module.scss'
 
 export const Header = () => {
   return (
-    <header className={s.header}>
+    <Container className={s.header}>
       <div>@sponger.code</div>
       <nav>
         <ul className={s.list}>
@@ -13,6 +15,6 @@ export const Header = () => {
         </ul>
       </nav>
       <div>Button</div>
-    </header>
+    </Container>
   )
 }

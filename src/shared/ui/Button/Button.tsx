@@ -4,11 +4,8 @@ import { ButtonHTMLAttributes, FC } from 'react'
 import s from './Button.module.scss'
 
 export enum ButtonTheme {
-  CLEAR = 'clear',
-  CLEAR_INVERTED = 'inverted',
-  OUTLINE = 'outline',
-  BACKGROUND = 'background',
-  BACKGROUND_INVERTED = 'backgroundInverted'
+  CONTAIN = 'contain',
+  OUTLINE = 'outline'
 }
 
 export enum ButtonSize {
@@ -30,14 +27,12 @@ export const Button: FC<Props> = (props) => {
     className,
     children,
     theme,
-    square,
     size = ButtonSize.M,
     ...otherProps
   } = props
 
   const mods: Record<string, boolean> = {
     [s[theme]]: true,
-    [s.square]: square,
     [s[size]]: true
   }
 

@@ -1,7 +1,6 @@
 .hero {
   height: calc(100vh - var(--header-height));
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
 }
@@ -35,3 +34,21 @@
   color: var(--color-zinc-500);
 }
 
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 500px;
+  height: auto;
+}
+
+.borderImage {
+  width: 150%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: 2px;
+  left: -50%;
+}

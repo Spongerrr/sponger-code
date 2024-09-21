@@ -1,6 +1,6 @@
 import { useVh } from '@/shared/hooks/useVh'
 import { AppRouter } from './providers/AppRouter'
-import { Header } from '@/widgets'
+import { Footer, Header } from '@/widgets'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
       <div className='app-content'>
         <AppRouter />
       </div>
+      <Footer />
     </div>
   )
 }

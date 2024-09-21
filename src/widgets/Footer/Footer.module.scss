@@ -1,0 +1,11 @@
+.background {
+  background: var(--color-black);
+  color: var(--color-zinc-300);
+}
+
+.footer {
+  height: var(--footer-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

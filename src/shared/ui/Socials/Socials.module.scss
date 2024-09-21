@@ -20,10 +20,19 @@
   }
 }
 
-.social:hover {
+.dark .social:hover {
   background-color: var(--color-black);
 
   svg {
     fill: var(--color-white);
   }
+}
+
+.light .social {
+  border-radius: 50%;
+  background-color: var(--color-zinc-300);
+}
+
+.light .social:hover {
+  background-color: var(--color-white);
 }

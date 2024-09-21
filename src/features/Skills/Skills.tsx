@@ -9,6 +9,7 @@ import IconWebpack from '@/shared/assets/icons/webpack.svg?react'
 import IconStorybook from '@/shared/assets/icons/storybook.svg?react'
 import IconGit from '@/shared/assets/icons/git.svg?react'
 import IconDocker from '@/shared/assets/icons/docker.svg?react'
+import IconWeb3JS from '@/shared/assets/icons/web3js.svg?react'
 
 import s from './Skills.module.scss'
 
@@ -48,8 +49,8 @@ export const Skills = () => {
           <p>Webpack</p>
         </div>
         <div className={s.skill}>
-          <IconStorybook />
-          <p>Storybook</p>
+          <IconWeb3JS />
+          <p>Web3.js</p>
         </div>
         <div className={s.skill}>
           <IconGit />

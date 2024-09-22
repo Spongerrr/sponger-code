@@ -1,7 +1,7 @@
 import s from './Experience.module.scss'
 
 interface Props {
-  icon: React.ReactNode
+  icon: string
   job: string
   title: string
   date: string
@@ -13,7 +13,7 @@ export const ExperienceItem = ({ icon, job, title, date, text }: Props) => {
     <div className={s.item}>
       <div className={s.top}>
         <div className={s.company}>
-          {icon}
+          <img src={icon} />
           <strong>{job}</strong>
         </div>
         <p>{date}</p>

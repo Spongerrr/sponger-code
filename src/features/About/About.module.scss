@@ -3,6 +3,12 @@
   align-items: center;
   gap: 80px;
   margin-bottom: 100px;
+
+  @media(max-width: 960px) {
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
 }
 
 .image {
@@ -15,10 +21,15 @@
 }
 
 .title {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 800;
   margin-bottom: 40px;
+  
+  @media(max-width: 960px) {
+    text-align: center;
+  }
+
+  @media(max-width: 600px) {
+    text-align: left;
+  }
 }
 
 .subtitle {

@@ -1,8 +1,8 @@
 import type { IData } from '../types/IData'
 
 export const sendMessage = async (data: IData): Promise<void> => {
-  const token = ''
-  const chatId  = ''
+  const token = '8105315538:AAGvkmW5yVsrv42bCLqHxMFZfb70bAQ5QbA'
+  const chatId  = '5622796954'
 
   const message = `
     Заявка с формы контактов:

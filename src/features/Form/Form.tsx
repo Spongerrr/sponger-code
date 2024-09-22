@@ -34,14 +34,15 @@ export const Form = () => {
       if (!data[field]) {
         dataErrors.push(`${field}`)
       }
-      if (dataErrors.length > 0) {
-        setErrors(dataErrors)
-      } else {
-        sendMessage(data)
-        setSended(true)
-        setErrors([])
-      }
     })
+
+    if (dataErrors.length > 0) {
+      setErrors(dataErrors)
+    } else {
+      sendMessage(data)
+      setSended(true)
+      setErrors([])
+    }
   }
 
   return (
@@ -78,7 +79,7 @@ export const Form = () => {
       </form>
       <div className={s.info}>
         <h2>Интересует сотрудничество? Напишите мне!</h2>
-        <p>Независимо от сложности проекта, я готов помочь. Заполните форму ниже или перейдите по одной из ссылок, и мы обсудим, как я могу быть полезен для вашего бизнеса.</p>
+        <p>Независимо от сложности проекта, я готов помочь. Заполните форму ниже или перейдите по одной из ссылок, и мы обсудим, как я могу быть полезен для Вашего бизнеса.</p>
         <a href='mailto:sponger.code@gmail.com&body' target='_blank'>
           sponger.code@gmail.com
         </a>

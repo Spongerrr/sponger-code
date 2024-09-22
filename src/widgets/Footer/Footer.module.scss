@@ -4,8 +4,12 @@
 }
 
 .footer {
-  height: var(--footer-height);
+  height: var(--footer-height-m);
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media(max-width: 960px) {
+    height: var(--footer-height-s);
+  }
 }

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "01",
+    "icon": "/src/shared/assets/experience/penguin-studio.svg",
+    "name": "Penguin Studio",
+    "date": "Декабрь 2023 - Май 2024",
+    "job": "Frontend - разработчик",
+    "description": "Разрабатывал информационный веб-сайт для Digital-студии из Швейцарии, используя стек технологий: Next.js, TypeScript, Framer-Motion."
+  },
+  {
+    "id": "02",
+    "icon": "/src/shared/assets/experience/refergram.svg",
+    "name": "Refergram Inc.",
+    "date": "Июнь 2024 - Август 2024",
+    "job": "Frontend - разработчик",
+    "description": "Разрабатывал веб-интерфейс для Telegram Mini-App, используя стек технологий: React, TypeScript, Redux Toolkit, Telegram SDK."
+  }
+]

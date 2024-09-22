@@ -1,8 +1,13 @@
 .header {
-  height: var(--header-height);
+  height: var(--header-height-m);
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media(max-width: 960px) {
+    height: var(--header-height-s);
+    background: red;
+  }
 }
 
 .list {
@@ -10,10 +15,26 @@
   gap: 32px;
   font-size: 20px;
   font-weight: 600;
+
+  @media(max-width: 1180px) {
+    font-size: 16px;
+  }
+  
+  @media(max-width: 960px) {
+    display: none;
+  }
 }
 
 .button {
+  text-decoration: none;
+  color: var(--color-white);
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.buttonContainer {
+  @media(max-width: 960px) {
+    display: none;
+  }
 }

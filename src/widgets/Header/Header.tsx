@@ -1,6 +1,7 @@
 import { Container } from '@/shared/ui/Container/Container'
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button'
 import DownloadIcon from '@/shared/assets/icons/download.svg?react'
+import ResumeFile from '@/shared/assets/SpongerResume.txt'
 
 import s from './Header.module.scss'
 
@@ -16,12 +17,11 @@ export const Header = () => {
           <li>Связаться со мной</li>
         </ul>
       </nav>
-      <Button
-        className={s.button}
-        theme={ButtonTheme.CONTAIN}
-      >
-        <p>Скачать резюме</p>
-        <DownloadIcon />
+      <Button theme={ButtonTheme.CONTAIN} className={s.buttonContainer}>
+        <a className={s.button} href={ResumeFile} download>
+          <p>Скачать резюме</p>
+          <DownloadIcon />
+        </a>
       </Button>
     </Container>
   )

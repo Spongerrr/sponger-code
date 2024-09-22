@@ -38,8 +38,7 @@ export const Skills = () => {
           <IconNext />
           <p>Next</p>
         </div>
-      </div>
-      <div className={s.skills}>
+
         <div className={s.skill}>
           <IconScss />
           <p>Scss</p>

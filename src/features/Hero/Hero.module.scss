@@ -1,18 +1,28 @@
 .hero {
-  height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--header-height-m));
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+
+  @media(max-width: 960px) {
+    height: calc(100vh - var(--header-height-s));
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding-bottom: 30px;
+  }
 }
 
 .main {
   display: flex;
   flex-direction: column;
   gap: 80px;
+
+  @media(max-width: 960px) {
+    gap: 30px;
+  }
 }
 
 .text {
-  max-width: 700px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -25,6 +35,11 @@
 
   span {
     font-weight: 800;
+  }
+
+  @media (max-width: 1180px) {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
@@ -41,6 +56,22 @@
 .image img {
   width: 500px;
   height: auto;
+
+  @media(max-width: 960px) {
+    width: 450px;
+  }
+
+  @media (max-width: 800px) {
+    width: 400px;
+  }
+
+  @media (max-width: 600px) {
+    width: 350px;
+  }
+
+  @media (max-width: 530px) {
+    width: 300px;
+  }
 }
 
 .borderImage {
@@ -51,4 +82,17 @@
   position: absolute;
   bottom: 2px;
   left: -50%;
+  overflow: hidden;
+
+  @media(max-width: 1180px) {
+    width: 125%;
+    left: -25%;
+  }
+
+  @media(max-width: 960px) {
+    width: 300%;
+    left: -100%;
+    height: 3px;
+    bottom: 3px;
+  }
 }

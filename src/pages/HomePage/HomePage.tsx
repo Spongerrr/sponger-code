@@ -1,4 +1,4 @@
-import { About, Hero, Skills, Experience, Form } from "@/features"
+import {  Hero, Skills, About, Experience, Projects, Testimonial, Form} from "@/features"
 
 export const HomePage = () => {
   return (
@@ -7,6 +7,8 @@ export const HomePage = () => {
       <Skills />
       <Experience />
       <About />
+      <Projects />
+      <Testimonial />
       <Form />
     </div>
   )

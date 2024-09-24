@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className={s.background}>
       <Container className={s.footer}>
         <p>@sponger.code</p>
-        <Socials theme='LIGHT' />
+        <Socials className={s.socials} theme='LIGHT' />
         <div>
           <p>©2024 Copyright.</p>
           <p>All rights reserved.</p>

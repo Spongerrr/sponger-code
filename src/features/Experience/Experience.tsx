@@ -14,9 +14,9 @@ export const Experience = () => {
             <ExperienceItem
               key={item.id}
               icon={item.icon}
-              title={item.name}
+              title={item.job}
               date={item.date}
-              job={item.job}
+              job={item.name}
               text={item.description}
             />
           ))}

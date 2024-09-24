@@ -4,9 +4,8 @@
   justify-content: space-between;
   align-items: center;
 
-  @media(max-width: 960px) {
+  @media(max-width: 962px) {
     height: var(--header-height-s);
-    background: red;
   }
 }
 
@@ -20,7 +19,7 @@
     font-size: 16px;
   }
   
-  @media(max-width: 960px) {
+  @media(max-width: 962px) {
     display: none;
   }
 }
@@ -34,7 +33,7 @@
 }
 
 .buttonContainer {
-  @media(max-width: 960px) {
+  @media(max-width: 962px) {
     display: none;
   }
 }

@@ -1,6 +1,10 @@
 .socials {
   display: flex;
   gap: 32px;
+
+  @media(max-width: 420px) {
+    justify-content: center;
+  }
 }
 
 .social {

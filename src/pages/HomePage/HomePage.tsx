@@ -1,4 +1,4 @@
-import {  Hero, Skills, About, Experience, Projects, Testimonial, Form} from "@/features"
+import { Hero, Skills, About, Experience, Projects, Testimonial, Form } from "@/features"
 
 export const HomePage = () => {
   return (

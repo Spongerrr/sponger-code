@@ -9,7 +9,11 @@
   justify-content: space-between;
   align-items: center;
 
-  @media(max-width: 960px) {
+  @media(max-width: 962px) {
     height: var(--footer-height-s);
+
+    .socials {
+      display: none;
+    }
   }
 }

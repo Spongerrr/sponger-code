@@ -2,6 +2,7 @@ import { Container } from '@/shared/ui/Container/Container'
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button'
 import ResumeFile from '@/shared/assets/SpongerResume.txt'
 import DownloadIcon from '/public/pictures/icons/download.svg?react'
+import { BurgerMenu } from './BurgerMenu/BurgerMenu'
 
 import s from './Header.module.scss'
 
@@ -23,6 +24,7 @@ export const Header = () => {
           <DownloadIcon />
         </a>
       </Button>
+      <BurgerMenu />
     </Container>
   )
 }

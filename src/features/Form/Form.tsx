@@ -46,7 +46,7 @@ export const Form = () => {
   }
 
   return (
-    <Container className={s.container}>
+    <Container className={s.container} id='contact'>
       <form
         onSubmit={handleSubmit}
         className={s.form}
@@ -71,10 +71,11 @@ export const Form = () => {
           <Button
             type='submit'
             theme={ButtonTheme.CONTAIN}
+            className={s.button}
           >
             Отправить
           </Button>
-          <Socials theme='DARK' />
+          <Socials theme='DARK' className={s.socials}/>
         </div>
       </form>
       <div className={s.info}>

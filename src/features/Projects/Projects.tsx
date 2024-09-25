@@ -8,7 +8,7 @@ import s from './Projects.module.scss'
 export const Projects = () => {
   return (
     <div className={s.background}>
-      <Container className={s.container}>
+      <Container className={s.container} id='projects'>
         <h2 className={s.title}>Мои проекты</h2>
         <div className={s.projects}>
           {ProjectsData.map((item) => (

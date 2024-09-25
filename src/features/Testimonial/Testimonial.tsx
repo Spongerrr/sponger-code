@@ -6,7 +6,7 @@ import { TestimonialItem } from './TestimonialItem'
 
 export const Testimonial = () => {
   return (
-    <Container className={s.container}>
+    <Container className={s.container} id='testimonial'>
       <h2 className={s.title}>Отзывы</h2>
       <div className={s.testimonial}>
         {TestimonialData.map((item) => (

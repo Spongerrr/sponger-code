@@ -1,0 +1,27 @@
+[
+  {
+    "id": "02",
+    "url": "experience",
+    "text": "Опыт работы"
+  },
+  {
+    "id": "03",
+    "url": "about",
+    "text": "Обо мне"
+  },
+  {
+    "id": "04",
+    "url": "projects",
+    "text": "Проекты"
+  },
+  {
+    "id": "05",
+    "url": "testimonial",
+    "text": "Отзывы"
+  },
+  {
+    "id": "06",
+    "url": "contact",
+    "text": "Контакты"
+  }
+]

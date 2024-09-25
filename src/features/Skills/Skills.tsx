@@ -16,7 +16,7 @@ import s from './Skills.module.scss'
 
 export const Skills = () => {
   return (
-    <Container className={s.skillsSection}>
+    <Container className={s.skillsSection} id='skills'>
       <h2 className={s.title}>Навыки</h2>
       <div className={s.skills}>
         {SkillsData.map((item) => (

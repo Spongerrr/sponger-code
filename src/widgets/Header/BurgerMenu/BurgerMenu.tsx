@@ -1,12 +1,29 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-
-import s from './BurgerMenu.module.scss'
 import { Socials } from '@/shared/ui/Socials/Socials'
 import { classNames } from '@/shared/lib/classNames'
+import NavList from '@/shared/assets/data/nav.json'
+
+import s from './BurgerMenu.module.scss'
+import { useScrollToSection } from '@/shared/hooks/useScrollToSection'
 
 export const BurgerMenu = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(true)
+
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
+
+  const scrollToSection = useScrollToSection(setIsOpen)
 
   return (
     <div className={s.burger}>
@@ -40,10 +57,14 @@ export const BurgerMenu = () => {
             exit={{ right: '-100%' }}
           >
             <ul className={s.list}>
-              <li>Навыки</li>
-              <li>Обо мне</li>
-              <li>Опыт работы</li>
-              <li>Связаться со мной</li>
+              {NavList.map((item) => (
+                <li
+                  key={item.id}
+                  onClick={() => scrollToSection(item.url)}
+                >
+                  {item.text}
+                </li>
+              ))}
             </ul>
             <a
               className={s.link}

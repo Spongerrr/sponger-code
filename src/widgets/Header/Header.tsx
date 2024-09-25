@@ -1,12 +1,12 @@
 import { Container } from '@/shared/ui/Container/Container'
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button'
-import ResumeFile from '@/shared/assets/SpongerResume.txt'
+import ResumeFile from '@/shared/assets/Resume.txt'
 import DownloadIcon from '/public/pictures/icons/download.svg?react'
 import NavList from '@/shared/assets/data/nav.json'
+import { useScrollToSection } from '@/shared/hooks/useScrollToSection'
 import { BurgerMenu } from './BurgerMenu/BurgerMenu'
 
 import s from './Header.module.scss'
-import { useScrollToSection } from '@/shared/hooks/useScrollToSection'
 
 export const Header = () => {
   const scrollToSection = useScrollToSection(false)

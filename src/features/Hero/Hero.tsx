@@ -1,7 +1,6 @@
 import { Socials } from '@/shared/ui/Socials/Socials'
 import { HeroTitle } from './HeroTitle'
 import { Container } from '@/shared/ui/Container/Container'
-import PhotoMain from '@/shared/assets/photo.png'
 
 import s from './Hero.module.scss'
 
@@ -13,7 +12,7 @@ export const Hero = () => {
         <Socials theme='DARK' />
       </div>
       <div className={s.image}>
-        <img src={PhotoMain} />
+        <img src='pictures/picture-hero.png' />
         <div className={s.borderImage} />
       </div>
     </Container>

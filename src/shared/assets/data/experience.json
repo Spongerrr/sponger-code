@@ -1,7 +1,7 @@
 [
   {
     "id": "01",
-    "icon": "/src/shared/assets/experience/penguin-studio.svg",
+    "icon": "pictures/experience/penguin-studio.svg?url",
     "name": "Penguin Studio",
     "date": "Декабрь 2023 - Май 2024",
     "job": "Frontend - разработчик",
@@ -9,7 +9,7 @@
   },
   {
     "id": "02",
-    "icon": "/src/shared/assets/experience/refergram.svg",
+    "icon": "pictures/experience/refergram.svg",
     "name": "Refergram Inc.",
     "date": "Июнь 2024 - Август 2024",
     "job": "Frontend - разработчик",

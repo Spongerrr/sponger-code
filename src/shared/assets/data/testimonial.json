@@ -1,21 +1,21 @@
 [
   {
     "id": "0001",
-    "avatar": "/src/shared/assets/testimonial/coffee.png",
+    "avatar": "pictures/testimonial/coffee.png",
     "text": "Всё понравилось, спасибо. Онлайн-доставка - это отличное решение для кофе-баров с едой. Мы и не подозревали, что это настолько сильно увеличит прибыль.",
     "name": "Coffee Tree",
     "job": "Ресторан"
   },
   {
     "id": "0002",
-    "avatar": "/src/shared/assets/testimonial/crypto.png",
+    "avatar": "pictures/testimonial/crypto.png",
     "text": "Хочу выразить огромную благодарность Илье. Работали вместе, создавая реферальное приложение. Остался доволен отзывчивостью и ответственностью данного человека.",
     "name": "CryptoXyLiGaN",
     "job": "Telegram-блогер"
   },
   {
     "id": "0003",
-    "avatar": "/src/shared/assets/testimonial/sun.png",
+    "avatar": "pictures/testimonial/sun.png",
     "text": "Большое спасибо за Лендинг. Как всегда лучший! В следующий раз только к тебе! Благодаря тебе у нас уже больше 50 отзывов на Яндексе.",
     "name": "Солнышко",
     "job": "Фото-студия"

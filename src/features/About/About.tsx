@@ -5,7 +5,7 @@ import s from './About.module.scss'
 export const About = () => {
   return (
     <Container className={s.about}>
-      <img className={s.image} src='my-photo.png' />
+      <img className={s.image} src='pictures/picture-about.png' />
       <div className={s.text}>
         <h2 className={s.title}>Обо мне</h2>
         <p className={s.subtitle}>

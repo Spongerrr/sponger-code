@@ -1,7 +1,7 @@
 import { Container } from '@/shared/ui/Container/Container'
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button'
-import DownloadIcon from '@/shared/assets/icons/download.svg?react'
 import ResumeFile from '@/shared/assets/SpongerResume.txt'
+import DownloadIcon from '/public/pictures/icons/download.svg?react'
 
 import s from './Header.module.scss'
 

@@ -10,6 +10,7 @@ import IconStorybook from '@/shared/assets/icons/storybook.svg?react'
 import IconGit from '@/shared/assets/icons/git.svg?react'
 import IconDocker from '@/shared/assets/icons/docker.svg?react'
 import IconWeb3JS from '@/shared/assets/icons/web3js.svg?react'
+import SkillsData from '@/shared/assets/data/skills.json'
 
 import s from './Skills.module.scss'
 
@@ -18,47 +19,12 @@ export const Skills = () => {
     <Container className={s.skillsSection}>
       <h2 className={s.title}>Навыки</h2>
       <div className={s.skills}>
-        <div className={s.skill}>
-          <IconJavaScript />
-          <p>JavaScript</p>
-        </div>
-        <div className={s.skill}>
-          <IconTypeScript />
-          <p>TypeScript</p>
-        </div>
-        <div className={s.skill}>
-          <IconReact />
-          <p>React</p>
-        </div>
-        <div className={s.skill}>
-          <IconRedux />
-          <p>Redux</p>
-        </div>
-        <div className={s.skill}>
-          <IconNext />
-          <p>Next</p>
-        </div>
-
-        <div className={s.skill}>
-          <IconScss />
-          <p>Scss</p>
-        </div>
-        <div className={s.skill}>
-          <IconWebpack />
-          <p>Webpack</p>
-        </div>
-        <div className={s.skill}>
-          <IconWeb3JS />
-          <p>Web3.js</p>
-        </div>
-        <div className={s.skill}>
-          <IconGit />
-          <p>Git</p>
-        </div>
-        <div className={s.skill}>
-          <IconDocker />
-          <p>Docker</p>
-        </div>
+        {SkillsData.map((item) => (
+          <div className={s.skill} key={item.id}>
+            <img src={item.iconUrl} />
+            <p>{item.title}</p>
+          </div>
+        ))}
       </div>
     </Container>
   )

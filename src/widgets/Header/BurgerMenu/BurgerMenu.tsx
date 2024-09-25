@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Socials } from '@/shared/ui/Socials/Socials'
 import { classNames } from '@/shared/lib/classNames'
+import { useScrollToSection } from '@/shared/hooks/useScrollToSection'
+import { Button, ButtonTheme } from '@/shared/ui/Button/Button'
+import DownloadIcon from '/public/pictures/icons/download.svg?react'
+import ResumeFile from '@/shared/assets/SpongerResume.txt'
 import NavList from '@/shared/assets/data/nav.json'
 
 import s from './BurgerMenu.module.scss'
-import { useScrollToSection } from '@/shared/hooks/useScrollToSection'
 
 export const BurgerMenu = () => {
 
@@ -66,13 +69,12 @@ export const BurgerMenu = () => {
                 </li>
               ))}
             </ul>
-            <a
-              className={s.link}
-              target='_blank'
-              href='mailto:sponger.code@gmail.com&body'
-            >
-              sponger.code@gmail.com
-            </a>
+            <Button theme={ButtonTheme.CONTAIN} className={s.buttonContainer}>
+              <a className={s.button} href={ResumeFile} download>
+                <p>Скачать резюме</p>
+                <DownloadIcon />
+              </a>
+            </Button>
             <Socials className={s.socials} theme='DARK' />
           </motion.div>
         )}

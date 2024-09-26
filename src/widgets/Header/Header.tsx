@@ -1,6 +1,6 @@
 import { Container } from '@/shared/ui/Container/Container'
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button'
-import ResumeFile from '@/shared/assets/Resume.txt'
+import ResumeFile from '@/shared/assets/Resume.pdf'
 import DownloadIcon from '/public/pictures/icons/download.svg?react'
 import NavList from '@/shared/assets/data/nav.json'
 import { useScrollToSection } from '@/shared/hooks/useScrollToSection'
@@ -27,7 +27,7 @@ export const Header = () => {
         </ul>
       </nav>
       <Button theme={ButtonTheme.CONTAIN} className={s.buttonContainer}>
-        <a className={s.button} href={ResumeFile} download>
+        <a className={s.button} href={ResumeFile} download='Resume.pdf'>
           <p>Скачать резюме</p>
           <DownloadIcon />
         </a>

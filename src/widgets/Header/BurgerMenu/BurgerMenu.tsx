@@ -5,7 +5,7 @@ import { classNames } from '@/shared/lib/classNames'
 import { useScrollToSection } from '@/shared/hooks/useScrollToSection'
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button'
 import DownloadIcon from '/public/pictures/icons/download.svg?react'
-import ResumeFile from '@/shared/assets/Resume.txt'
+import ResumeFile from '@/shared/assets/Resume.pdf'
 import NavList from '@/shared/assets/data/nav.json'
 
 import s from './BurgerMenu.module.scss'
@@ -70,7 +70,7 @@ export const BurgerMenu = () => {
               ))}
             </ul>
             <Button theme={ButtonTheme.CONTAIN} className={s.buttonContainer}>
-              <a className={s.button} href={ResumeFile} download>
+              <a className={s.button} href={ResumeFile} download='Resume.pdfg'>
                 <p>Скачать резюме</p>
                 <DownloadIcon />
               </a>

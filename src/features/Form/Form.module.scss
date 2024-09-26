@@ -23,6 +23,8 @@
   }
 }
 
+
+
 .form input,
 .form textarea {
   padding: 18px 24px;
@@ -107,5 +109,17 @@
       font-size: 20px;
       line-height: 24px;
     }
+  }
+}
+
+.sended {
+  border: 1px solid var(--color-zinc-300);
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px;
+  margin: 60px 0px;
+
+  @media(max-width: 962px) {
+    margin: 40px 0px;
   }
 }

@@ -1,20 +1,20 @@
 [
   {
     "id": "01",
-    "name": "Project template",
-    "description": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    "name": "CodX",
+    "description": "Разработал веб-приложение, основанное на взаимодействии с NFT, используя Web3.js и React. Подключил сторонние API-сервисы для расширения функционала и улучшения пользовательского опыта. ",
     "img": "pictures/projects/1.png"
   },
   {
     "id": "02",
-    "name": "Project template",
-    "description": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-    "img": "pictures/projects/1.png"
+    "name": "Refergram",
+    "description": "Создал с нуля клиентскую часть веб-приложения для реферальной программы на базе Telegram. Интегрировал внутренние и внешние API, обеспечил тестирование и сбор аналитических данных, а также выполнил качественную SEO-оптимизацию.",
+    "img": "pictures/projects/refergram.png"
   },
   {
     "id": "03",
-    "name": "Project template",
-    "description": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-    "img": "pictures/projects/1.png"
+    "name": "Troom",
+    "description": "Разработал социальную сеть, подобную Linkedin, на базе Next.js и Next-Auth, адаптированную для российского рынка. Реализовал авторизацию и взаимодействие с API, обеспечив защиту данных в сотрудничестве с бэкенд-разработчиком.",
+    "img": "pictures/projects/troom.png"
   }
 ]

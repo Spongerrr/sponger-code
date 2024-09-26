@@ -13,6 +13,7 @@ export const Projects = () => {
         <div className={s.projects}>
           {ProjectsData.map((item) => (
             <ProjectItem
+              key={item.id}
               img={item.img}
               num={item.id}
               name={item.name}

@@ -6,7 +6,7 @@ import s from './Hero.module.scss'
 
 export const Hero = () => {
   return (
-    <Container className={s.hero}>
+    <Container className={s.hero} id='hero'>
       <div className={s.main}>
         <HeroTitle />
         <Socials theme='DARK' />

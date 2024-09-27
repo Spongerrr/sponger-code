@@ -3,6 +3,14 @@
   color: var(--color-zinc-300);
 }
 
+.logo {
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-zinc-100);
+  }
+}
+
 .footer {
   height: var(--footer-height-m);
   display: flex;

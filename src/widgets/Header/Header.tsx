@@ -13,7 +13,12 @@ export const Header = () => {
 
   return (
     <Container className={s.header}>
-      <div>@sponger.code</div>
+      <div
+        className={s.logo}
+        onClick={() => scrollToSection('hero')}
+      >
+        @sponger.code
+      </div>
       <nav>
         <ul className={s.list}>
           {NavList.map((item) => (
